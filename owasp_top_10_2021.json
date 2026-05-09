@@ -1,0 +1,95 @@
+[
+    {
+        "id": "A01:2021",
+        "name": "Broken Access Control",
+        "description": "Restrictions on what authenticated users are allowed to do are not properly enforced.",
+        "examples": [
+            "Bypassing access control checks by modifying the URL",
+            "Permitting viewing or editing someone else's account"
+        ]
+    },
+    {
+        "id": "A02:2021",
+        "name": "Cryptographic Failures",
+        "description": "Focuses on failures related to cryptography which often leads to sensitive data exposure.",
+        "examples": [
+            "Transmitting data in clear text",
+            "Using weak or old cryptographic algorithms"
+        ]
+    },
+    {
+        "id": "A03:2021",
+        "name": "Injection",
+        "description": "User-supplied data is not validated, filtered, or sanitized by the application.",
+        "examples": [
+            "SQL Injection",
+            "Cross-site Scripting (XSS)",
+            "Command Injection"
+        ]
+    },
+    {
+        "id": "A04:2021",
+        "name": "Insecure Design",
+        "description": "A new category for 2021 focusing on risks related to design flaws.",
+        "examples": [
+            "Lack of business logic checks",
+            "Failure to identify and protect sensitive assets"
+        ]
+    },
+    {
+        "id": "A05:2021",
+        "name": "Security Misconfiguration",
+        "description": "Default configurations, incomplete configurations, or ad hoc configurations.",
+        "examples": [
+            "Default passwords",
+            "Unnecessary features enabled",
+            "Detailed error messages exposing stack traces"
+        ]
+    },
+    {
+        "id": "A06:2021",
+        "name": "Vulnerable and Outdated Components",
+        "description": "Using components with known vulnerabilities or that are unsupported.",
+        "examples": [
+            "Using an old version of a framework with a public CVE",
+            "Unpatched OS"
+        ]
+    },
+    {
+        "id": "A07:2021",
+        "name": "Identification and Authentication Failures",
+        "description": "Failures in confirming the user's identity, authentication, and session management.",
+        "examples": [
+            "Weak passwords",
+            "Permitting brute force attacks",
+            "Predictable session IDs"
+        ]
+    },
+    {
+        "id": "A08:2021",
+        "name": "Software and Data Integrity Failures",
+        "description": "Focuses on making assumptions related to software updates, critical data, and CI/CD pipelines without verifying integrity.",
+        "examples": [
+            "Insecure Deserialization",
+            "Unsigned firmware updates"
+        ]
+    },
+    {
+        "id": "A09:2021",
+        "name": "Security Logging and Monitoring Failures",
+        "description": "Insufficient logging and monitoring to detect and respond to active breaches.",
+        "examples": [
+            "Log-only errors without alerting",
+            "Insufficient logging of suspicious activities"
+        ]
+    },
+    {
+        "id": "A10:2021",
+        "name": "Server-Side Request Forgery (SSRF)",
+        "description": "The application fetches a remote resource without validating the user-supplied URL.",
+        "examples": [
+            "Accessing internal metadata services",
+            "Bypassing firewalls to reach internal services"
+        ]
+    }
+]
