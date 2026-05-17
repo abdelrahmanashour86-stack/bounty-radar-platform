@@ -192,4 +192,7 @@ navLinks.addEventListener("click", () => {
 })
 
 window.onload = callData
-search.onclick = () => fetchNistData(searchQuery);
+search.onclick = () => {
+    searchQuery = input.value;
+    fetchNistData(searchQuery)
+};
